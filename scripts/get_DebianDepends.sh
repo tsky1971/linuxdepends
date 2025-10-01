@@ -1,5 +1,6 @@
 #!/bin/sh
 #
+sudo apt-get install qtmultimedia5-dev
 sudo apt-get install gcc g++ llvm clang gdb gdbserver nasm yasm -y
 
 sudo apt-get install cmake cmake-gui git-all subversion subversion-tools -y
@@ -62,7 +63,10 @@ sudo apt install libgtkgl2.0-dev libgtkgl2.0 -y
 
 sudo apt install libopenblas-dev -y
 
-sudo apt install libogre-1.9.0v5 games-c++-dev games-python3-dev gis-devel -y
+sudo apt install games-c++-dev games-python3-dev gis-devel -y
+
+sudo apt install libidn2-dev idn2 -y
+
 
 
 

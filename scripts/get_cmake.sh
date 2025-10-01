@@ -7,7 +7,7 @@ tar xfz cmake-$cmake_version.tar.gz
 
 cd cmake-$cmake_version
 ./bootstrap
-./configure --with-gui
+./configure --qt-gui
 make
 sudo make install
 cd ..
