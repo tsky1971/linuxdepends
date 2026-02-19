@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-cmake_version=4.2.1
+cmake_version=4.2.3
 
 wget https://github.com/Kitware/CMake/releases/download/v$cmake_version/cmake-$cmake_version.tar.gz
 tar xfz cmake-$cmake_version.tar.gz
