@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sh get_FlatBuffers.sh
+sh get_flatbuffers.sh
 sh get_lz4.sh
 sh get_zstd.sh
 sh get_msgpack.sh
