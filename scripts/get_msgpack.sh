@@ -1,30 +1,33 @@
 #!/bin/sh
 
+./get_cJSON.sh
+
 echo "get msgpack-c"
 if [ ! -d msgpack-c ]
 then 
 	git clone https://github.com/msgpack/msgpack-c.git
-
 	cd msgpack-c
-	git checkout c_master
-	git pull
-	mkdir build
-	cd build
-#	cmake -DMSGPACK_CXX11=ON ..
-	cmake ..
-	make
-	sudo make install
-	cd -
+		git checkout c_master
+		git pull
+		mkdir build
+		cd build
+			#	cmake -DMSGPACK_CXX11=ON ..
+			cmake ..
+			make
+			sudo make install
+		cd ..
+	cd ..
 else
 	echo "exists already"
 	cd msgpack-c
-	git checkout c_master
-	git pull
-	cd build
-#	cmake -DMSGPACK_CXX11=ON ..
-	cmake ..	
-	make
-	sudo make install
-	cd -
+		git checkout c_master
+		git pull
+		cd build
+			#	cmake -DMSGPACK_CXX11=ON ..
+			cmake ..	
+			make
+			sudo make install
+		cd ..
+	cd ..
 fi
 

@@ -1,10 +1,12 @@
 #!/bin/sh
 
-echo "get aixlog"
-if [ ! -d aixlog ]
+
+echo "get cJSON"
+if [ ! -d cJSON ]
 then 
-	git clone https://github.com/badaix/aixlog.git
-	cd aixlog
+	git clone https://github.com/DaveGamble/cJSON.git
+	cd cJSON		
+		git pull
 		mkdir build
 		cd build
 			cmake ..
@@ -14,13 +16,12 @@ then
 	cd ..
 else
 	echo "exists already"
-	cd aixlog
+	cd cJSON
 		git pull
-		cd build
-			cmake
+		cd build			
+			cmake ..	
 			make
 			sudo make install
 		cd ..
 	cd ..
 fi
-
