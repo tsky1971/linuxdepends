@@ -7,7 +7,7 @@ then
 	cd glad
 	mkdir build
 	cd build
-	cmake ..
+	cmake ../cmake
 	make
 	sudo cp -a include /usr/local/
 	sudo cp -a *.a /usr/local/lib/
@@ -17,7 +17,7 @@ else
 	git pull
 	cd glad
 	cd build
-	cmake ..
+	cmake ../cmake
 	make
 	sudo cp -a include /usr/local/
 	sudo cp -a libglad.a /usr/local/lib/
