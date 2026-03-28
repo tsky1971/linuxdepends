@@ -5,20 +5,22 @@ if [ ! -d lz4 ]
 then 
 	git clone https://github.com/lz4/lz4.git
 	cd lz4
-	mkdir buildlinux
-	cd build
-	cmake ../build/cmake
-	make
-	sudo make install
-	cd -
+		mkdir buildLinux
+		cd buildLinux
+			cmake ../build/cmake
+			make
+			sudo make install
+		cd ..
+	cd ..
 else
 	echo "exists already"
 	cd lz4
-	git pull
-	cd buildlinux
-	cmake ../build/cmake
-	make
-	sudo make install
-	cd -
+		git pull			
+		cd buildLinux
+			cmake ../build/cmake
+			make
+			sudo make install
+		cd ..
+	cd ..
 fi
 
