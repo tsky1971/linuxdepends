@@ -6,11 +6,10 @@ then
 	git clone https://github.com/libsdl-org/SDL_ttf.git
 	cd SDL_ttf
 	mkdir build			
-	cd build
-		cmake ..
-		make
-		sudo make install
-		sudo ldconfig
+		cd build
+			cmake ..
+			make
+			sudo make install		
 		cd ..
 	cd ..
 else
@@ -20,8 +19,7 @@ else
 	cd build
 		cmake ..
 		make
-		sudo make install
-		sudo ldconfig
+		sudo make install		
 		cd ..
 	cd ..
 fi

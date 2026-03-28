@@ -1,6 +1,5 @@
 #!/bin/sh
 
-sh get_glad.sh
 sh get_FlatBuffers.sh
 sh get_lz4.sh
 sh get_zstd.sh
@@ -21,11 +20,12 @@ sh get_cppzmq.sh
 
 sh get_entt.sh
 
-sh get_sdl2.sh
-sh get_sdl2_image.sh
-sh get_sdl2_mixer.sh
-sh get_sdl2_net.sh
-sh get_sdl2_rtf.sh
-sh get_sdl2_ttf.sh
+sh get_sdl.sh
+sh get_sdl_image.sh
+sh get_sdl_mixer.sh
+sh get_sdl_net.sh
+sh get_sdl_rtf.sh
+sh get_sdl_ttf.sh
+sh get_sdl_helloworld.sh
 
 sh get_opencv.sh

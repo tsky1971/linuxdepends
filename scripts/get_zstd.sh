@@ -5,15 +5,22 @@ if [ ! -d zstd ]
 then 
 	git clone https://github.com/facebook/zstd.git
 	cd zstd
-	make -j4
-	sudo make install
-	cd -
+		mkdir build
+		cd build
+			cmake ..
+			make
+			sudo make install
+		cd ..
+	cd ..
 else
 	echo "exists already"
 	cd zstd
-	git pull
-	make -j4
-	sudo make install
-	cd -
+		git pull		
+		cd build
+			cmake ..
+			make
+			sudo make install
+		cd ..
+	cd ..
 fi
 

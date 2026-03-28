@@ -1,11 +1,12 @@
 #!/bin/sh
 
+./get_SPIRV-Cross.sh
 
-echo "get SDL_net"
-if [ ! -d SDL_net ]
+echo "get SDL_shadercross"
+if [ ! -d SDL_shadercross ]
 then
-	git clone https://github.com/libsdl-org/SDL_net.git
-	cd SDL_net
+	git clone https://github.com/libsdl-org/SDL_shadercross.git
+	cd SDL_shadercross
 		mkdir build
 		cd build
 			cmake ..
@@ -14,7 +15,7 @@ then
 		cd ..		
 	cd ..
 else
-	cd SDL_net
+	cd SDL_shadercross
 	git config pull.rebase true
 	git pull
 		cd build
