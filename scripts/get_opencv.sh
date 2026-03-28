@@ -11,22 +11,22 @@ then
 		mkdir build
 		cd build
 			cmake .. -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules
-			make
+			make -j(nproc)
 			sudo make install	
 		cd ..
 	cd ..	
 else
 	echo "exists already"
 	cd opencv_contrib
-	git pull
+		git pull
 	cd ..
 	cd opencv
-	git pull
-	cd build
-	cmake .. -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules
-	make
-	sudo make install
-	cd ..
+		git pull
+		cd build
+			cmake .. -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules
+			make -j(nproc)
+			sudo make install
+		cd ..
 	cd ..
 fi
 

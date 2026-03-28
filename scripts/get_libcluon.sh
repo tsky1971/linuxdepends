@@ -7,28 +7,27 @@ then
 
 	cd libcluon
 	
-	git config pull.rebase true
-	git pull
+		git config pull.rebase true
+		git pull
 	
-	cd libcluon
-	mkdir build
-	cd build
-	cmake ..
-	make
-	sudo make install
-	cd ..
+		mkdir build
+		cd build
+			cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ../libcluon 
+			make
+			sudo make install
+		cd ..
 	
 	cd ..
 else
 	echo "exists already"
 	cd libcluon
-	git pull
-	cd libcluon
-	cd build
-	cmake ..
-	make
-	sudo make install
-	cd ..
+		git pull
+		
+		cd build
+			cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ../libcluon
+			make
+			sudo make install
+		cd ..
 	cd ..
 fi
 

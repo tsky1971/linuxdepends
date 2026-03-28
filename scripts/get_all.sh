@@ -1,17 +1,22 @@
 #!/bin/sh
 
-sh get_flatbuffers.sh
+sh get_aixlog.sh
+
+sh get_UDPSocket.sh
+sh get_libcluon.sh
+sh get_libjpeg-turbo.sh
+
 sh get_lz4.sh
 sh get_zstd.sh
+
 sh get_msgpack.sh
 sh get_msgpack_cpp.sh
 sh get_cwpack.sh
 sh get_rpclib.sh
-sh get_aixlog.sh
+sh get_flatbuffers.sh
+sh get_protobuf.sh
+
 sh get_imgui.sh
-sh get_libcluon.sh
-sh get_libjpeg-turbo.sh
-sh get_UDPSocket.sh
 
 sh get_libsodium.sh
 sh get_libzmq.sh

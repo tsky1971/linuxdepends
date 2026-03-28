@@ -7,7 +7,7 @@ then
 	cd protobuf
 		mkdir build
 		cd build
-			cmake ../cmake -Dprotobuf_BUILD_TESTS=OFF
+			cmake .. -Dprotobuf_BUILD_TESTS=OFF
 			make -j4
 			sudo make install
 			sudo ldconfig
@@ -19,7 +19,7 @@ else
 		git config pull.rebase true
 		git pull
 		cd build
-			cmake ../cmake -Dprotobuf_BUILD_TESTS=OFF
+			cmake .. -Dprotobuf_BUILD_TESTS=OFF
 			make -j4
 			sudo make install
 			sudo ldconfig
