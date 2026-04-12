@@ -57,7 +57,7 @@ nodejs-doc libdlna-dev libqtav1 python3-pychromecast flac libffmpegthumbnailer-d
 libswscale-dev python3-jinja2 libsox-fmt-base python3-flask \
 lame libtesseract4 python3-zeroconf -y
 
-sudo apt install openjdk-11-jdk ant -y
+sudo apt install openjdk-11-jdk openjdk-19-jdk ant -y
 
 sudo apt install libgtkgl2.0-dev libgtkgl2.0 -y
 
@@ -67,7 +67,7 @@ sudo apt install games-c++-dev games-python3-dev gis-devel -y
 
 sudo apt install libidn2-dev idn2 -y
 
-
+sudo apt install fftw-dev libfftw3-dev libfftw3-long3 libfftw3-mpi-dev libfftw3-quad3 libfftw3-single3
 
 
 
